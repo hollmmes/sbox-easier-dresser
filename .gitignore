@@ -1,2 +1,5 @@
 .bin/
 *.sbproj.user
+**/obj/
+**/Properties/
+**/*.csproj

@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "Editor": {
-      "commandName": "Executable",
-      "executablePath": "../../../../../../../../../Program Files (x86)/Steam/steamapps/common/sbox/sbox-dev.exe",
-      "commandLineArgs": "-project \u0022c:\\users\\tufancan\\documents\\s\u0026box projects\\shattereddimensions\\Libraries\\sbox-easier-dresser\\sbox-easier-dresser.sbproj\u0022"
-    }
-  }
-}
