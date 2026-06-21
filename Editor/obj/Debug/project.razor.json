@@ -1,0 +1,3105 @@
+{
+  "SerializedFilePath": "c:\\Users\\Tufancan\\Documents\\s&box projects\\shattereddimensions\\Libraries\\sbox-easier-dresser\\Editor\\obj\\Debug\\project.razor.json",
+  "FilePath": "c:\\Users\\Tufancan\\Documents\\s&box projects\\shattereddimensions\\Libraries\\sbox-easier-dresser\\Editor\\sbox-easier-dresser.editor.csproj",
+  "Configuration": {
+    "ConfigurationName": "Default",
+    "LanguageVersion": "8.0",
+    "Extensions": []
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [
+      {
+        "HashCode": 1422906666,
+        "Kind": "Components.Component",
+        "Name": "Microsoft.AspNetCore.Components.ComponentBase",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "<member name=\"T:Microsoft.AspNetCore.Components.ComponentBase\">\r\n            <summary>\r\n            A base component\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ComponentBase"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Microsoft.AspNetCore.Components.ComponentBase",
+          "Common.TypeNameIdentifier": "ComponentBase",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1587205924,
+        "Kind": "Components.Component",
+        "Name": "Microsoft.AspNetCore.Components.ComponentBase",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "<member name=\"T:Microsoft.AspNetCore.Components.ComponentBase\">\r\n            <summary>\r\n            A base component\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Microsoft.AspNetCore.Components.ComponentBase"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Microsoft.AspNetCore.Components.ComponentBase",
+          "Common.TypeNameIdentifier": "ComponentBase",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 466377339,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.Image",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.Image\">\r\n            <summary>\r\n            A generic box that displays a given texture within itself.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Image"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Image",
+          "Common.TypeNameIdentifier": "Image",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 316285945,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.Image",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.Image\">\r\n            <summary>\r\n            A generic box that displays a given texture within itself.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.Image"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Image",
+          "Common.TypeNameIdentifier": "Image",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1646357307,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.Image.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Image"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Image.ChildContent",
+          "Common.TypeNameIdentifier": "Image",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1854658179,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.Image.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.Image"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Image.ChildContent",
+          "Common.TypeNameIdentifier": "Image",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1319773328,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.Label",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.Label\">\r\n            <summary>\r\n            A generic text label. Can be made editable.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Label"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Label.Text\">\r\n            <summary>\r\n            Text to display on the label.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Text",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsRich",
+            "TypeName": "System.Boolean",
+            "Documentation": "<member name=\"P:Sandbox.UI.Label.IsRich\">\r\n            <summary>\r\n            Set to true if this is rich text. This means it can support some inline html elements.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "IsRich",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Label",
+          "Common.TypeNameIdentifier": "Label",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1648818113,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.Label",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.Label\">\r\n            <summary>\r\n            A generic text label. Can be made editable.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.Label"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Label.Text\">\r\n            <summary>\r\n            Text to display on the label.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Text",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "IsRich",
+            "TypeName": "System.Boolean",
+            "Documentation": "<member name=\"P:Sandbox.UI.Label.IsRich\">\r\n            <summary>\r\n            Set to true if this is rich text. This means it can support some inline html elements.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "IsRich",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Label",
+          "Common.TypeNameIdentifier": "Label",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1004302037,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.Label.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Label"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Label.ChildContent",
+          "Common.TypeNameIdentifier": "Label",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -184583203,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.Label.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.Label"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Label.ChildContent",
+          "Common.TypeNameIdentifier": "Label",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1630469343,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.ScenePanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.ScenePanel\">\r\n            <summary>\r\n            Allows to render a scene world onto a panel.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ScenePanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.ScenePanel",
+          "Common.TypeNameIdentifier": "ScenePanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1403672280,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.ScenePanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.ScenePanel\">\r\n            <summary>\r\n            Allows to render a scene world onto a panel.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.ScenePanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.ScenePanel",
+          "Common.TypeNameIdentifier": "ScenePanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 846599020,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.ScenePanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "ScenePanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.ScenePanel.ChildContent",
+          "Common.TypeNameIdentifier": "ScenePanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1184854412,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.ScenePanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.ScenePanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.ScenePanel.ChildContent",
+          "Common.TypeNameIdentifier": "ScenePanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1058617254,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.SvgPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.SvgPanel\">\r\n            <summary>\r\n            A generic panel that draws an SVG scaled to size\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SvgPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.SvgPanel",
+          "Common.TypeNameIdentifier": "SvgPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1575531721,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.SvgPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.SvgPanel\">\r\n            <summary>\r\n            A generic panel that draws an SVG scaled to size\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.SvgPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.SvgPanel",
+          "Common.TypeNameIdentifier": "SvgPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1354248646,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.SvgPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "SvgPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.SvgPanel.ChildContent",
+          "Common.TypeNameIdentifier": "SvgPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1598261727,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.SvgPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.SvgPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.SvgPanel.ChildContent",
+          "Common.TypeNameIdentifier": "SvgPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1361318635,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.WebPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.WebPanel\">\r\n            <summary>\r\n            A panel that displays an interactive web page.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Url",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Url",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WebPanel",
+          "Common.TypeNameIdentifier": "WebPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -117892146,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.WebPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.WebPanel\">\r\n            <summary>\r\n            A panel that displays an interactive web page.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.WebPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Url",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Url",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WebPanel",
+          "Common.TypeNameIdentifier": "WebPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -54189649,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.WebPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "WebPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WebPanel.ChildContent",
+          "Common.TypeNameIdentifier": "WebPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1333989039,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.WebPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.WebPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WebPanel.ChildContent",
+          "Common.TypeNameIdentifier": "WebPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1186733396,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.Panel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.Panel\">\r\n            <summary>\r\n            A simple User Interface panel. Can be styled with <a href=\"https://en.wikipedia.org/wiki/CSS\">CSS</a>.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Panel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Panel",
+          "Common.TypeNameIdentifier": "Panel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1777209038,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.Panel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.Panel\">\r\n            <summary>\r\n            A simple User Interface panel. Can be styled with <a href=\"https://en.wikipedia.org/wiki/CSS\">CSS</a>.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.Panel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Panel",
+          "Common.TypeNameIdentifier": "Panel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1266832149,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.Panel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Panel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Panel.ChildContent",
+          "Common.TypeNameIdentifier": "Panel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 685481717,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.Panel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.Panel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.Panel.ChildContent",
+          "Common.TypeNameIdentifier": "Panel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -837227942,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.RootPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.RootPanel\">\r\n            <summary>\r\n            A root panel. Serves as a container for other panels, handles things such as rendering.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RootPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.RootPanel",
+          "Common.TypeNameIdentifier": "RootPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -400180362,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.RootPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.RootPanel\">\r\n            <summary>\r\n            A root panel. Serves as a container for other panels, handles things such as rendering.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.RootPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.RootPanel",
+          "Common.TypeNameIdentifier": "RootPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1328648901,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.RootPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "RootPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.RootPanel.ChildContent",
+          "Common.TypeNameIdentifier": "RootPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -801479455,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.RootPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.RootPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.RootPanel.ChildContent",
+          "Common.TypeNameIdentifier": "RootPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -675593431,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.VirtualGrid",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.VirtualGrid\">\r\n            <summary>\r\n            A virtualized, scrollable grid panel that only creates item panels when visible.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualGrid"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ItemSize",
+            "TypeName": "Vector2",
+            "Documentation": "<member name=\"P:Sandbox.UI.VirtualGrid.ItemSize\">\r\n            <summary>\r\n            Fixed width of each item. If &lt; 0, layout may stretch to fill width.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "ItemSize",
+              "Common.GloballyQualifiedTypeName": "global::Vector2"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Item",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment<global::System.Object>",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnCreateCell",
+            "TypeName": "System.Action<Sandbox.UI.Panel, System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnCreateCell\">\r\n            <summary>\r\n            Called when a cell is created. Allows you to fill the cell in\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action<global::Sandbox.UI.Panel, global::System.Object>",
+              "Common.PropertyName": "OnCreateCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnLastCell",
+            "TypeName": "System.Action",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnLastCell\">\r\n            <summary>\r\n            Called when the last cell has been viewed. This allows you to view more.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action",
+              "Common.PropertyName": "OnLastCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Items",
+            "TypeName": "System.Collections.Generic.IEnumerable<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Items\">\r\n            <summary>\r\n            Replaces the current items. Only triggers a rebuild if the sequence is actually different.\r\n            When set to an IList (like List&lt;T&gt;), changes to the source list will be automatically detected.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Items",
+              "Common.GloballyQualifiedTypeName": "global::System.Collections.Generic.IEnumerable<global::System.Object>"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualGrid",
+          "Common.TypeNameIdentifier": "VirtualGrid",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1731273183,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.VirtualGrid",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.VirtualGrid\">\r\n            <summary>\r\n            A virtualized, scrollable grid panel that only creates item panels when visible.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.VirtualGrid"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ItemSize",
+            "TypeName": "Vector2",
+            "Documentation": "<member name=\"P:Sandbox.UI.VirtualGrid.ItemSize\">\r\n            <summary>\r\n            Fixed width of each item. If &lt; 0, layout may stretch to fill width.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "ItemSize",
+              "Common.GloballyQualifiedTypeName": "global::Vector2"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Item",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment<global::System.Object>",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnCreateCell",
+            "TypeName": "System.Action<Sandbox.UI.Panel, System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnCreateCell\">\r\n            <summary>\r\n            Called when a cell is created. Allows you to fill the cell in\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action<global::Sandbox.UI.Panel, global::System.Object>",
+              "Common.PropertyName": "OnCreateCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnLastCell",
+            "TypeName": "System.Action",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnLastCell\">\r\n            <summary>\r\n            Called when the last cell has been viewed. This allows you to view more.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action",
+              "Common.PropertyName": "OnLastCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Items",
+            "TypeName": "System.Collections.Generic.IEnumerable<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Items\">\r\n            <summary>\r\n            Replaces the current items. Only triggers a rebuild if the sequence is actually different.\r\n            When set to an IList (like List&lt;T&gt;), changes to the source list will be automatically detected.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Items",
+              "Common.GloballyQualifiedTypeName": "global::System.Collections.Generic.IEnumerable<global::System.Object>"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualGrid",
+          "Common.TypeNameIdentifier": "VirtualGrid",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1481134347,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualGrid.Item",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Item",
+            "ParentTag": "VirtualGrid"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'Item' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualGrid.Item",
+          "Common.TypeNameIdentifier": "VirtualGrid",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 229312644,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualGrid.Item",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Item",
+            "ParentTag": "Sandbox.UI.VirtualGrid"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'Item' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualGrid.Item",
+          "Common.TypeNameIdentifier": "VirtualGrid",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 2007067068,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualGrid.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "VirtualGrid"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualGrid.ChildContent",
+          "Common.TypeNameIdentifier": "VirtualGrid",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1801260474,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualGrid.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.VirtualGrid"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualGrid.ChildContent",
+          "Common.TypeNameIdentifier": "VirtualGrid",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 982126319,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.VirtualList",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.VirtualList\">\r\n            <summary>\r\n            A virtualized, scrollable list panel that only creates item panels when visible.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ItemHeight",
+            "TypeName": "System.Single",
+            "Documentation": "<member name=\"P:Sandbox.UI.VirtualList.ItemHeight\">\r\n            <summary>\r\n            Fixed height of each item.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "ItemHeight",
+              "Common.GloballyQualifiedTypeName": "global::System.Single"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Item",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment<global::System.Object>",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnCreateCell",
+            "TypeName": "System.Action<Sandbox.UI.Panel, System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnCreateCell\">\r\n            <summary>\r\n            Called when a cell is created. Allows you to fill the cell in\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action<global::Sandbox.UI.Panel, global::System.Object>",
+              "Common.PropertyName": "OnCreateCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnLastCell",
+            "TypeName": "System.Action",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnLastCell\">\r\n            <summary>\r\n            Called when the last cell has been viewed. This allows you to view more.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action",
+              "Common.PropertyName": "OnLastCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Items",
+            "TypeName": "System.Collections.Generic.IEnumerable<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Items\">\r\n            <summary>\r\n            Replaces the current items. Only triggers a rebuild if the sequence is actually different.\r\n            When set to an IList (like List&lt;T&gt;), changes to the source list will be automatically detected.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Items",
+              "Common.GloballyQualifiedTypeName": "global::System.Collections.Generic.IEnumerable<global::System.Object>"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualList",
+          "Common.TypeNameIdentifier": "VirtualList",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1199405169,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.VirtualList",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.VirtualList\">\r\n            <summary>\r\n            A virtualized, scrollable list panel that only creates item panels when visible.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.VirtualList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ItemHeight",
+            "TypeName": "System.Single",
+            "Documentation": "<member name=\"P:Sandbox.UI.VirtualList.ItemHeight\">\r\n            <summary>\r\n            Fixed height of each item.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "ItemHeight",
+              "Common.GloballyQualifiedTypeName": "global::System.Single"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Item",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment<global::System.Object>",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnCreateCell",
+            "TypeName": "System.Action<Sandbox.UI.Panel, System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnCreateCell\">\r\n            <summary>\r\n            Called when a cell is created. Allows you to fill the cell in\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action<global::Sandbox.UI.Panel, global::System.Object>",
+              "Common.PropertyName": "OnCreateCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnLastCell",
+            "TypeName": "System.Action",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.OnLastCell\">\r\n            <summary>\r\n            Called when the last cell has been viewed. This allows you to view more.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.GloballyQualifiedTypeName": "global::System.Action",
+              "Common.PropertyName": "OnLastCell",
+              "Components.DelegateSignature": "True",
+              "Components.IsDelegateAwaitableResult": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Items",
+            "TypeName": "System.Collections.Generic.IEnumerable<System.Object>",
+            "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Items\">\r\n            <summary>\r\n            Replaces the current items. Only triggers a rebuild if the sequence is actually different.\r\n            When set to an IList (like List&lt;T&gt;), changes to the source list will be automatically detected.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Items",
+              "Common.GloballyQualifiedTypeName": "global::System.Collections.Generic.IEnumerable<global::System.Object>"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualList",
+          "Common.TypeNameIdentifier": "VirtualList",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -910423881,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualList.Item",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Item",
+            "ParentTag": "VirtualList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'Item' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualList.Item",
+          "Common.TypeNameIdentifier": "VirtualList",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 850772043,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualList.Item",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"P:Sandbox.UI.BaseVirtualPanel.Item\">\r\n            <summary>\r\n            Template used to render an item into a cell panel.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Item",
+            "ParentTag": "Sandbox.UI.VirtualList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'Item' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualList.Item",
+          "Common.TypeNameIdentifier": "VirtualList",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -2060821734,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualList.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "VirtualList"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualList.ChildContent",
+          "Common.TypeNameIdentifier": "VirtualList",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 522301840,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.VirtualList.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.VirtualList"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.VirtualList.ChildContent",
+          "Common.TypeNameIdentifier": "VirtualList",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 2071939608,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.WorldPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.WorldPanel\">\r\n            <summary>\r\n            An interactive 2D panel rendered in the 3D world.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WorldPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WorldPanel",
+          "Common.TypeNameIdentifier": "WorldPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1881541261,
+        "Kind": "Components.Component",
+        "Name": "Sandbox.UI.WorldPanel",
+        "AssemblyName": "Sandbox.Engine",
+        "Documentation": "<member name=\"T:Sandbox.UI.WorldPanel\">\r\n            <summary>\r\n            An interactive 2D panel rendered in the 3D world.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sandbox.UI.WorldPanel"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Tooltip",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.Tooltip\">\r\n            <summary>\r\n            A string to show when hovering over this panel.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "Tooltip",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "TooltipClass",
+            "TypeName": "System.String",
+            "Documentation": "<member name=\"P:Sandbox.UI.Panel.TooltipClass\">\r\n            <summary>\r\n            The created tooltip element will have this class, if set.\r\n            </summary>\r\n        </member>",
+            "Metadata": {
+              "Common.PropertyName": "TooltipClass",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WorldPanel",
+          "Common.TypeNameIdentifier": "WorldPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1353452274,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.WorldPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "WorldPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WorldPanel.ChildContent",
+          "Common.TypeNameIdentifier": "WorldPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1689249870,
+        "Kind": "Components.ChildContent",
+        "Name": "Sandbox.UI.WorldPanel.ChildContent",
+        "AssemblyName": "Sandbox.Engine",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Sandbox.UI.WorldPanel"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Sandbox.UI.WorldPanel.ChildContent",
+          "Common.TypeNameIdentifier": "WorldPanel",
+          "Common.TypeNamespace": "Sandbox.UI",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -358718478,
+        "Kind": "Components.EventHandler",
+        "Name": "onfocus",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onfocus' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocus",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocus:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocus:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onfocus",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onfocus' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onfocus"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onfocus' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onfocus' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -290140460,
+        "Kind": "Components.EventHandler",
+        "Name": "onblur",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onblur' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onblur",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onblur:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onblur:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onblur",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onblur' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onblur"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onblur' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onblur' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1849469542,
+        "Kind": "Components.EventHandler",
+        "Name": "onfocusin",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onfocusin' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocusin",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocusin:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocusin:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onfocusin",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onfocusin' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onfocusin"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onfocusin' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onfocusin' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 643507252,
+        "Kind": "Components.EventHandler",
+        "Name": "onfocusout",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onfocusout' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocusout",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocusout:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onfocusout:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onfocusout",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onfocusout' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onfocusout"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onfocusout' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onfocusout' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1843275140,
+        "Kind": "Components.EventHandler",
+        "Name": "onmouseover",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmouseover' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseover",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseover:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseover:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmouseover",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmouseover' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmouseover"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmouseover' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmouseover' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1985131253,
+        "Kind": "Components.EventHandler",
+        "Name": "onmouseout",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmouseout' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseout",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseout:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseout:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmouseout",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmouseout' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmouseout"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmouseout' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmouseout' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 2083744643,
+        "Kind": "Components.EventHandler",
+        "Name": "onmouseleave",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmouseleave' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseleave",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseleave:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseleave:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmouseleave",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmouseleave' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmouseleave"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmouseleave' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmouseleave' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1062622772,
+        "Kind": "Components.EventHandler",
+        "Name": "onmouseenter",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmouseenter' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseenter",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseenter:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseenter:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmouseenter",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmouseenter' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmouseenter"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmouseenter' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmouseenter' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1084449531,
+        "Kind": "Components.EventHandler",
+        "Name": "onmousemove",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmousemove' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmousemove",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmousemove:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmousemove:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmousemove",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmousemove' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmousemove"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmousemove' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmousemove' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1796840097,
+        "Kind": "Components.EventHandler",
+        "Name": "onmousedown",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmousedown' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmousedown",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmousedown:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmousedown:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmousedown",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmousedown' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmousedown"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmousedown' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmousedown' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1331986946,
+        "Kind": "Components.EventHandler",
+        "Name": "onmouseup",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onmouseup' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseup",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseup:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onmouseup:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onmouseup",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onmouseup' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onmouseup"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onmouseup' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onmouseup' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1935955958,
+        "Kind": "Components.EventHandler",
+        "Name": "onclick",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@onclick' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onclick",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onclick:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@onclick:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@onclick",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@onclick' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "onclick"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@onclick' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@onclick' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 1244222840,
+        "Kind": "Components.EventHandler",
+        "Name": "ondblclick",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the '@ondblclick' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@ondblclick",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@ondblclick:preventDefault",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          },
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@ondblclick:stopPropagation",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "@ondblclick",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
+            "Documentation": "Sets the '@ondblclick' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "ondblclick"
+            },
+            "BoundAttributeParameters": [
+              {
+                "Name": "preventDefault",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to cancel (if cancelable) the default action that belongs to the '@ondblclick' event.",
+                "Metadata": {
+                  "Common.PropertyName": "PreventDefault"
+                }
+              },
+              {
+                "Name": "stopPropagation",
+                "TypeName": "System.Boolean",
+                "Documentation": "Specifies whether to prevent further propagation of the '@ondblclick' event in the capturing and bubbling phases.",
+                "Metadata": {
+                  "Common.PropertyName": "StopPropagation"
+                }
+              }
+            ]
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.EventHandlers",
+          "Common.TypeNameIdentifier": "EventHandlers",
+          "Common.TypeNamespace": "Microsoft.AspNetCore.Components.Web",
+          "Components.EventHandler.EventArgs": "System.EventArgs",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1691363342,
+        "Kind": "Components.Splat",
+        "Name": "Attributes",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Merges a collection of attributes into the current element or component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@attributes",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Splat",
+            "Name": "@attributes",
+            "TypeName": "System.Object",
+            "Documentation": "Merges a collection of attributes into the current element or component.",
+            "Metadata": {
+              "Common.PropertyName": "Attributes",
+              "Common.DirectiveAttribute": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Attributes",
+          "Components.IsSpecialKind": "Components.Splat",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1044293370,
+        "Kind": "Components.Key",
+        "Name": "Key",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Ensures that the component or element will be preserved across renders if (and only if) the supplied key value matches.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "Attributes": [
+              {
+                "Name": "@key",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Key",
+            "Name": "@key",
+            "TypeName": "System.Object",
+            "Documentation": "Ensures that the component or element will be preserved across renders if (and only if) the supplied key value matches.",
+            "Metadata": {
+              "Common.PropertyName": "Key",
+              "Common.DirectiveAttribute": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Key",
+          "Components.IsSpecialKind": "Components.Key",
+          "Runtime.Name": "Components.None"
+        }
+      }
+    ],
+    "CSharpLanguageVersion": 1300
+  },
+  "RootNamespace": "Sandbox",
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
