@@ -3,187 +3,306 @@ using System.Linq;
 
 namespace EasierDresser;
 
-/// <summary>
-/// Editörde dock olarak açılan Outfit Preset Manager.
-/// </summary>
 [Dock( "Editor", "Outfit Presets", "checkroom" )]
 public class OutfitPresetTool : Widget
 {
 	public static OutfitPresetTool Instance { get; private set; }
 
-	List<OutfitPreset> _presets = new();
-	List<string> _availableClothing = new();
-	OutfitPreset _selectedPreset;
+	// Ana gruplar — kategorileri bunlara bağlıyoruz
+	static readonly (string Label, Clothing.ClothingCategory[] Cats)[] Groups = new[]
+	{
+		("Saç", new[] { Clothing.ClothingCategory.Hair, Clothing.ClothingCategory.HairShort, Clothing.ClothingCategory.HairMedium, Clothing.ClothingCategory.HairLong, Clothing.ClothingCategory.HairUpdo, Clothing.ClothingCategory.HairSpecial }),
+		("Şapka", new[] { Clothing.ClothingCategory.Hat, Clothing.ClothingCategory.HatCap, Clothing.ClothingCategory.Headwear }),
+		("Üst", new[] { Clothing.ClothingCategory.Tops, Clothing.ClothingCategory.TShirt, Clothing.ClothingCategory.Shirt, Clothing.ClothingCategory.Sweatshirt, Clothing.ClothingCategory.Hoodie, Clothing.ClothingCategory.Vest, Clothing.ClothingCategory.Knitwear, Clothing.ClothingCategory.Jacket, Clothing.ClothingCategory.Cardigan, Clothing.ClothingCategory.Coat, Clothing.ClothingCategory.Gilet }),
+		("Alt", new[] { Clothing.ClothingCategory.Bottoms, Clothing.ClothingCategory.Trousers, Clothing.ClothingCategory.Jeans, Clothing.ClothingCategory.Shorts, Clothing.ClothingCategory.Skirt }),
+		("Ayakkabı", new[] { Clothing.ClothingCategory.Footwear, Clothing.ClothingCategory.Shoes, Clothing.ClothingCategory.Boots, Clothing.ClothingCategory.Trainers, Clothing.ClothingCategory.Heels, Clothing.ClothingCategory.Sandals, Clothing.ClothingCategory.Slippers, Clothing.ClothingCategory.Socks }),
+		("Aksesuar", new[] { Clothing.ClothingCategory.Gloves, Clothing.ClothingCategory.Eyewear, Clothing.ClothingCategory.Facial, Clothing.ClothingCategory.NecklaceChain, Clothing.ClothingCategory.EarringStud, Clothing.ClothingCategory.Wristwear, Clothing.ClothingCategory.Ring, Clothing.ClothingCategory.Piercing }),
+		("Tam Vücut", new[] { Clothing.ClothingCategory.Fullbody, Clothing.ClothingCategory.Dress, Clothing.ClothingCategory.Suit, Clothing.ClothingCategory.Costume, Clothing.ClothingCategory.Uniform }),
+		("İç Çamaşır", new[] { Clothing.ClothingCategory.Underwear, Clothing.ClothingCategory.Bra, Clothing.ClothingCategory.Underpants }),
+		("Cilt / Göz", new[] { Clothing.ClothingCategory.Skin, Clothing.ClothingCategory.Eyes }),
+	};
 
-	ListView _presetListView;
-	ListView _clothingListView;
-	LineEdit _nameEdit;
-	Button _applyButton;
-	Button _deleteButton;
+	Dresser _dresser;
+	List<Clothing> _allClothing = new();
 
-	string _newPresetName = "";
+	// Sol panel
+	Label _statusLabel;
+	Widget _presetList;
+	LineEdit _presetNameEdit;
+
+	// Sağ panel
+	Widget _categoryPanel;
 
 	public OutfitPresetTool( Widget parent ) : base( parent )
 	{
 		Instance = this;
+		Layout = Layout.Row();
+		Layout.Spacing = 0;
 		BuildUI();
-		Refresh();
+		RefreshDresser();
+		RefreshClothing();
 	}
+
+	// ─── UI ────────────────────────────────────────────────────────────────
 
 	void BuildUI()
 	{
-		Layout = Layout.Row();
-		Layout.Margin = 8;
-		Layout.Spacing = 8;
-
-		// Sol panel
+		// ── Sol panel ──────────────────────────────────────────────────────
 		var left = new Widget( this );
 		left.Layout = Layout.Column();
-		left.Layout.Spacing = 4;
-		left.MinimumWidth = 180;
+		left.Layout.Spacing = 6;
+		left.Layout.Margin = 10;
+		left.MinimumWidth = 200;
+		left.MaximumWidth = 220;
+
+		// Durum
+		_statusLabel = new Label( "Dresser bulunamadı", left );
+		_statusLabel.SetStyles( "color: #f88; font-size: 11px;" );
+		left.Layout.Add( _statusLabel );
 
 		left.Layout.Add( new Label( "Kayıtlı Şablonlar", left ) );
+		_presetList = new Widget( left );
+		_presetList.Layout = Layout.Column();
+		_presetList.Layout.Spacing = 2;
+		left.Layout.Add( _presetList, 1 );
 
-		_presetListView = new ListView( left );
-		_presetListView.ItemActivated += item => OnPresetSelected( item );
-		left.Layout.Add( _presetListView, 1 );
+		left.Layout.AddSeparator();
 
-		var btnRow = new Widget( left );
-		btnRow.Layout = Layout.Row();
-		btnRow.Layout.Spacing = 4;
+		left.Layout.Add( new Label( "Şablon Adı:", left ) );
+		_presetNameEdit = new LineEdit( left );
+		_presetNameEdit.PlaceholderText = "Yeni şablon adı...";
+		left.Layout.Add( _presetNameEdit );
 
-		_applyButton = new Button( "Uygula", btnRow );
-		_applyButton.Clicked += OnApplyClicked;
-		_applyButton.Enabled = false;
-		btnRow.Layout.Add( _applyButton, 1 );
+		var saveBtn = new Button( "Mevcut Kıyafetleri Kaydet", left );
+		saveBtn.Clicked += OnSavePreset;
+		left.Layout.Add( saveBtn );
 
-		_deleteButton = new Button( "Sil", btnRow );
-		_deleteButton.Clicked += OnDeleteClicked;
-		_deleteButton.Enabled = false;
-		btnRow.Layout.Add( _deleteButton, 1 );
+		var refreshBtn = new Button( "Yenile", left );
+		refreshBtn.Clicked += () => { RefreshDresser(); RefreshClothing(); };
+		left.Layout.Add( refreshBtn );
 
-		left.Layout.Add( btnRow );
 		Layout.Add( left );
+		Layout.AddSeparator();
 
-		// Sağ panel
-		var right = new Widget( this );
-		right.Layout = Layout.Column();
-		right.Layout.Spacing = 4;
+		// ── Sağ panel ──────────────────────────────────────────────────────
+		var rightScroll = new ScrollArea( this );
+		rightScroll.Canvas = new Widget();
+		rightScroll.Canvas.Layout = Layout.Column();
+		rightScroll.Canvas.Layout.Spacing = 4;
+		rightScroll.Canvas.Layout.Margin = 10;
 
-		right.Layout.Add( new Label( "Yeni Şablon", right ) );
-
-		var nameRow = new Widget( right );
-		nameRow.Layout = Layout.Row();
-		nameRow.Layout.Spacing = 4;
-		nameRow.Layout.Add( new Label( "Ad:", nameRow ) );
-
-		_nameEdit = new LineEdit( nameRow );
-		_nameEdit.PlaceholderText = "Şablon adı...";
-		_nameEdit.TextEdited += v => _newPresetName = v;
-		nameRow.Layout.Add( _nameEdit, 1 );
-		right.Layout.Add( nameRow );
-
-		right.Layout.Add( new Label( "Kıyafetler (seç):", right ) );
-
-		_clothingListView = new ListView( right );
-		right.Layout.Add( _clothingListView, 1 );
-
-		var saveBtn = new Button( "Şablon Olarak Kaydet", right );
-		saveBtn.Clicked += OnSaveClicked;
-		right.Layout.Add( saveBtn );
-
-		Layout.Add( right, 1 );
+		_categoryPanel = rightScroll.Canvas;
+		Layout.Add( rightScroll, 1 );
 	}
 
-	void Refresh()
+	// ─── Veri ──────────────────────────────────────────────────────────────
+
+	void RefreshDresser()
 	{
-		_presets = OutfitPresetLibrary.LoadAll();
-		_availableClothing = OutfitPresetLibrary.FindClothingAssets();
-
-		_presetListView.SetItems( _presets.Select( p => (object)p.Name ).ToList() );
-		_clothingListView.SetItems( _availableClothing.Select( p => (object)p ).ToList() );
-	}
-
-	void OnPresetSelected( object item )
-	{
-		var name = item as string;
-		_selectedPreset = _presets.FirstOrDefault( p => p.Name == name );
-		_applyButton.Enabled = _selectedPreset != null;
-		_deleteButton.Enabled = _selectedPreset != null;
-	}
-
-	void OnApplyClicked()
-	{
-		if ( _selectedPreset == null ) return;
-
-		var dresser = EditorScene.Selection
+		_dresser = EditorScene.Selection
 			.OfType<GameObject>()
 			.SelectMany( go => go.Components.GetAll<Dresser>() )
 			.FirstOrDefault();
 
-		if ( dresser == null )
+		if ( _dresser != null )
 		{
-			EditorUtility.DisplayDialog( "Hata", "Önce sahnede bir Dresser component'i olan objeyi seçin.", "Tamam" );
-			return;
+			_statusLabel.Text = $"✓ {_dresser.GameObject.Name}";
+			_statusLabel.SetStyles( "color: #8f8; font-size: 11px;" );
+		}
+		else
+		{
+			_statusLabel.Text = "Sahnede Dresser seçin";
+			_statusLabel.SetStyles( "color: #f88; font-size: 11px;" );
+		}
+	}
+
+	void RefreshClothing()
+	{
+		// Proje içindeki tüm .clothing assetlerini yükle
+		_allClothing = ResourceLibrary.GetAll<Clothing>().ToList();
+
+		RebuildCategoryUI();
+		RebuildPresetUI();
+	}
+
+	void RebuildCategoryUI()
+	{
+		_categoryPanel.DestroyChildren();
+
+		foreach ( var (label, cats) in Groups )
+		{
+			var items = _allClothing
+				.Where( c => cats.Contains( c.Category ) )
+				.ToList();
+
+			if ( items.Count == 0 ) continue;
+
+			// Grup başlığı
+			var groupLabel = new Label( label.ToUpper(), _categoryPanel );
+			groupLabel.SetStyles( "font-weight: bold; color: #aaa; font-size: 11px; margin-top: 6px;" );
+			_categoryPanel.Layout.Add( groupLabel );
+
+			foreach ( var item in items )
+			{
+				var row = new Widget( _categoryPanel );
+				row.Layout = Layout.Row();
+				row.Layout.Spacing = 6;
+
+				var cb = new Checkbox( item.Title ?? item.ResourceName, row );
+				cb.Value = IsEquipped( item );
+
+				var captured = item;
+				cb.StateChanged += state =>
+				{
+					if ( _dresser == null )
+					{
+						cb.Value = false;
+						EditorUtility.DisplayDialog( "Hata", "Önce sahnede bir Dresser seçin.", "Tamam" );
+						return;
+					}
+					ToggleClothing( captured, state == CheckState.On );
+				};
+
+				row.Layout.Add( cb, 1 );
+				_categoryPanel.Layout.Add( row );
+			}
 		}
 
-		ApplyPresetToDresser( dresser, _selectedPreset );
+		// Eşleşmeyen kategoriler
+		var mapped = Groups.SelectMany( g => g.Cats ).ToHashSet();
+		var others = _allClothing.Where( c => !mapped.Contains( c.Category ) ).ToList();
+		if ( others.Count > 0 )
+		{
+			var groupLabel = new Label( "DİĞER", _categoryPanel );
+			groupLabel.SetStyles( "font-weight: bold; color: #aaa; font-size: 11px; margin-top: 6px;" );
+			_categoryPanel.Layout.Add( groupLabel );
+
+			foreach ( var item in others )
+			{
+				var cb = new Checkbox( item.Title ?? item.ResourceName, _categoryPanel );
+				cb.Value = IsEquipped( item );
+				var captured = item;
+				cb.StateChanged += state => ToggleClothing( captured, state == CheckState.On );
+				_categoryPanel.Layout.Add( cb );
+			}
+		}
 	}
 
-	void OnDeleteClicked()
+	void RebuildPresetUI()
 	{
-		if ( _selectedPreset == null ) return;
-		OutfitPresetLibrary.Delete( _selectedPreset );
-		_selectedPreset = null;
-		_applyButton.Enabled = false;
-		_deleteButton.Enabled = false;
-		Refresh();
+		_presetList.DestroyChildren();
+
+		var presets = OutfitPresetLibrary.LoadAll();
+		foreach ( var preset in presets )
+		{
+			var row = new Widget( _presetList );
+			row.Layout = Layout.Row();
+			row.Layout.Spacing = 4;
+
+			var btn = new Button( preset.Name, row );
+			var captured = preset;
+			btn.Clicked += () =>
+			{
+				RefreshDresser();
+				if ( _dresser == null )
+				{
+					EditorUtility.DisplayDialog( "Hata", "Önce sahnede bir Dresser seçin.", "Tamam" );
+					return;
+				}
+				ApplyPreset( captured );
+				RebuildCategoryUI();
+			};
+			row.Layout.Add( btn, 1 );
+
+			var del = new Button( "✕", row );
+			del.Clicked += () =>
+			{
+				OutfitPresetLibrary.Delete( captured );
+				RebuildPresetUI();
+			};
+			del.FixedWidth = 28;
+			row.Layout.Add( del );
+
+			_presetList.Layout.Add( row );
+		}
 	}
 
-	void OnSaveClicked()
+	// ─── Mantık ────────────────────────────────────────────────────────────
+
+	bool IsEquipped( Clothing item )
 	{
-		if ( string.IsNullOrWhiteSpace( _newPresetName ) )
+		if ( _dresser == null ) return false;
+		return _dresser.Clothing.Any( e => e.Clothing == item );
+	}
+
+	void ToggleClothing( Clothing item, bool equip )
+	{
+		if ( _dresser == null ) return;
+
+		if ( equip )
+		{
+			if ( !IsEquipped( item ) )
+				_dresser.Clothing.Add( new ClothingContainer.ClothingEntry { Clothing = item } );
+		}
+		else
+		{
+			_dresser.Clothing.RemoveAll( e => e.Clothing == item );
+		}
+
+		_ = _dresser.Apply();
+	}
+
+	void ApplyPreset( OutfitPreset preset )
+	{
+		_dresser.Clothing.Clear();
+		foreach ( var path in preset.ClothingPaths )
+		{
+			var asset = ResourceLibrary.Get<Clothing>( path );
+			if ( asset != null )
+				_dresser.Clothing.Add( new ClothingContainer.ClothingEntry { Clothing = asset } );
+		}
+		_ = _dresser.Apply();
+	}
+
+	void OnSavePreset()
+	{
+		var name = _presetNameEdit.Text.Trim();
+		if ( string.IsNullOrEmpty( name ) )
 		{
 			EditorUtility.DisplayDialog( "Hata", "Şablon adı boş olamaz.", "Tamam" );
 			return;
 		}
 
-		var selected = _clothingListView.SelectedItems.Cast<string>().ToList();
-		if ( selected.Count == 0 )
+		if ( _dresser == null )
 		{
-			EditorUtility.DisplayDialog( "Hata", "En az bir kıyafet seçin.", "Tamam" );
+			EditorUtility.DisplayDialog( "Hata", "Önce sahnede bir Dresser seçin.", "Tamam" );
 			return;
 		}
 
-		OutfitPresetLibrary.Save( new OutfitPreset
-		{
-			Name = _newPresetName,
-			ClothingPaths = selected
-		} );
+		var paths = _dresser.Clothing
+			.Where( e => e.Clothing != null )
+			.Select( e => e.Clothing.ResourcePath )
+			.ToList();
 
-		_nameEdit.Text = "";
-		_newPresetName = "";
-		Refresh();
+		OutfitPresetLibrary.Save( new OutfitPreset { Name = name, ClothingPaths = paths } );
+		_presetNameEdit.Text = "";
+		RebuildPresetUI();
 	}
 
+	// Statik yardımcı — DresserInspector da kullanır
 	public static void ApplyPresetToDresser( Dresser dresser, OutfitPreset preset )
 	{
 		dresser.Clothing.Clear();
-
 		foreach ( var path in preset.ClothingPaths )
 		{
 			var asset = ResourceLibrary.Get<Clothing>( path );
-			if ( asset == null ) continue;
-			dresser.Clothing.Add( new ClothingContainer.ClothingEntry { Clothing = asset } );
+			if ( asset != null )
+				dresser.Clothing.Add( new ClothingContainer.ClothingEntry { Clothing = asset } );
 		}
-
 		_ = dresser.Apply();
 	}
 }
 
-/// <summary>
-/// Üst menüde "Editor > Outfit Presets" girişini açar.
-/// </summary>
 public static class OutfitPresetMenu
 {
 	[Menu( "Editor", "Outfit Presets/Open" )]

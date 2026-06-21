@@ -1,0 +1,16 @@
+{
+  "SerializedFilePath": "c:\\Users\\Tufancan\\Documents\\s&box projects\\shattereddimensions\\Libraries\\sbox-easier-dresser\\Editor\\obj\\Debug\\project.razor.json",
+  "FilePath": "c:\\Users\\Tufancan\\Documents\\s&box projects\\shattereddimensions\\Libraries\\sbox-easier-dresser\\Editor\\sbox-easier-dresser.editor.csproj",
+  "Configuration": {
+    "ConfigurationName": "Default",
+    "LanguageVersion": "6.0",
+    "Extensions": []
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1300
+  },
+  "RootNamespace": "Sandbox",
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
