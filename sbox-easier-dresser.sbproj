@@ -1,0 +1,17 @@
+{
+  "Title": "SBox Easier Dresser",
+  "Type": "library",
+  "Org": "tufancan",
+  "Ident": "sbox-easier-dresser",
+  "Schema": 1,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Mounts": null,
+  "IsStandaloneOnly": false,
+  "Metadata": {
+    "Description": "A simple outfit preset manager for s&box. Save and apply clothing combinations with one click via the Dresser component.",
+    "Tags": "editor,dresser,clothing,outfit,tool"
+  }
+}
