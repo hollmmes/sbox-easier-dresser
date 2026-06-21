@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "__guid": "dresser-preview-scene-001",
+  "GameObjects": [
+    {
+      "__guid": "dp-light-001",
+      "Name": "Directional Light",
+      "Enabled": true,
+      "Position": "200,200,300",
+      "Rotation": "0.6427876,0,0,0.7660444",
+      "Scale": "1,1,1",
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "dp-light-comp-001",
+          "LightColor": "1,0.95,0.85,1",
+          "Brightness": 3.0,
+          "Shadows": true
+        },
+        {
+          "__type": "Sandbox.AmbientLight",
+          "__guid": "dp-ambient-001",
+          "LightColor": "0.2,0.25,0.35,1",
+          "Brightness": 1.0
+        }
+      ]
+    },
+    {
+      "__guid": "dp-floor-001",
+      "Name": "Floor",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "dp-floor-renderer-001",
+          "Model": "models/dev/plane.vmdl",
+          "Tint": "0.3,0.3,0.35,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "dp-floor-collider-001",
+          "Model": "models/dev/plane.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "dp-char-001",
+      "Name": "PreviewChar",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "dp-char-renderer-001",
+          "Model": "models/citizen/citizen.vmdl"
+        },
+        {
+          "__type": "Sandbox.Dresser",
+          "__guid": "dp-char-dresser-001",
+          "BodyTarget": "dp-char-renderer-001",
+          "Clothing": []
+        }
+      ]
+    },
+    {
+      "__guid": "dp-camera-001",
+      "Name": "Preview Camera",
+      "Enabled": true,
+      "Position": "0,-120,70",
+      "Rotation": "0.0871557,0,0,0.9961947",
+      "Scale": "1,1,1",
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "dp-camera-comp-001",
+          "FieldOfView": 60,
+          "ZNear": 10,
+          "ZFar": 4096,
+          "IsMainCamera": true
+        }
+      ]
+    }
+  ]
+}
