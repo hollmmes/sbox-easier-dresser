@@ -4,116 +4,95 @@ using System.Linq;
 namespace EasierDresser;
 
 /// <summary>
-/// Editörün üst araç çubuğunda görünen Outfit Preset Manager penceresi.
+/// Editörde dock olarak açılan Outfit Preset Manager.
 /// </summary>
-[EditorApp( "Outfit Presets", "checkroom", "Kıyafet şablonlarını kaydet ve uygula" )]
-public class OutfitPresetTool : DockWidget
+[Dock( "Editor", "Outfit Presets", "checkroom" )]
+public class OutfitPresetTool : Widget
 {
+	public static OutfitPresetTool Instance { get; private set; }
+
 	List<OutfitPreset> _presets = new();
 	List<string> _availableClothing = new();
-
-	// Sol panel seçimi
 	OutfitPreset _selectedPreset;
 
-	// Yeni şablon için geçici veri
-	string _newPresetName = "";
-	List<string> _newPresetClothing = new();
-
-	// UI elemanları
-	ListView _presetList;
-	ListView _clothingList;
+	ListView _presetListView;
+	ListView _clothingListView;
 	LineEdit _nameEdit;
-	Button _saveButton;
 	Button _applyButton;
 	Button _deleteButton;
 
-	public OutfitPresetTool( Widget parent = null ) : base( parent )
-	{
-		Title = "Outfit Preset Manager";
-		MinimumSize = new Vector2( 600, 400 );
+	string _newPresetName = "";
 
+	public OutfitPresetTool( Widget parent ) : base( parent )
+	{
+		Instance = this;
 		BuildUI();
 		Refresh();
 	}
 
 	void BuildUI()
 	{
-		var root = new Widget( this );
-		root.Layout = Layout.Row();
-		root.LayoutMargins = new Sandbox.UI.Margin( 8 );
+		Layout = Layout.Row();
+		Layout.Margin = 8;
+		Layout.Spacing = 8;
 
-		// Sol panel — kayıtlı şablonlar
-		var leftPanel = new Widget( root );
-		leftPanel.Layout = Layout.Column();
-		leftPanel.MinimumWidth = 180;
+		// Sol panel
+		var left = new Widget( this );
+		left.Layout = Layout.Column();
+		left.Layout.Spacing = 4;
+		left.MinimumWidth = 180;
 
-		var leftLabel = new Label( "Şablonlar", leftPanel );
-		leftLabel.SetStyles( "font-weight: bold; margin-bottom: 4px;" );
+		left.Layout.Add( new Label( "Kayıtlı Şablonlar", left ) );
 
-		_presetList = new ListView( leftPanel );
-		_presetList.ItemActivated += OnPresetSelected;
-		leftPanel.Layout.Add( _presetList, 1 );
+		_presetListView = new ListView( left );
+		_presetListView.ItemActivated += item => OnPresetSelected( item );
+		left.Layout.Add( _presetListView, 1 );
 
-		var leftButtons = new Widget( leftPanel );
-		leftButtons.Layout = Layout.Row();
+		var btnRow = new Widget( left );
+		btnRow.Layout = Layout.Row();
+		btnRow.Layout.Spacing = 4;
 
-		_applyButton = new Button( "Uygula", leftButtons );
+		_applyButton = new Button( "Uygula", btnRow );
 		_applyButton.Clicked += OnApplyClicked;
 		_applyButton.Enabled = false;
-		leftButtons.Layout.Add( _applyButton, 1 );
+		btnRow.Layout.Add( _applyButton, 1 );
 
-		_deleteButton = new Button( "Sil", leftButtons );
+		_deleteButton = new Button( "Sil", btnRow );
 		_deleteButton.Clicked += OnDeleteClicked;
 		_deleteButton.Enabled = false;
-		leftButtons.Layout.Add( _deleteButton, 1 );
+		btnRow.Layout.Add( _deleteButton, 1 );
 
-		leftPanel.Layout.Add( leftButtons );
-		leftPanel.Layout.AddStretchCell();
+		left.Layout.Add( btnRow );
+		Layout.Add( left );
 
-		root.Layout.Add( leftPanel );
+		// Sağ panel
+		var right = new Widget( this );
+		right.Layout = Layout.Column();
+		right.Layout.Spacing = 4;
 
-		// Ayırıcı
-		var separator = new Widget( root );
-		separator.MinimumWidth = 1;
-		separator.MaximumWidth = 1;
-		separator.SetStyles( "background: #333; margin: 0 8px;" );
-		root.Layout.Add( separator );
+		right.Layout.Add( new Label( "Yeni Şablon", right ) );
 
-		// Sağ panel — yeni şablon
-		var rightPanel = new Widget( root );
-		rightPanel.Layout = Layout.Column();
-
-		var rightLabel = new Label( "Yeni Şablon", rightPanel );
-		rightLabel.SetStyles( "font-weight: bold; margin-bottom: 4px;" );
-
-		var nameRow = new Widget( rightPanel );
+		var nameRow = new Widget( right );
 		nameRow.Layout = Layout.Row();
-		var nameLabel = new Label( "Ad:", nameRow );
-		nameLabel.MinimumWidth = 40;
-		nameRow.Layout.Add( nameLabel );
+		nameRow.Layout.Spacing = 4;
+		nameRow.Layout.Add( new Label( "Ad:", nameRow ) );
 
 		_nameEdit = new LineEdit( nameRow );
 		_nameEdit.PlaceholderText = "Şablon adı...";
 		_nameEdit.TextEdited += v => _newPresetName = v;
 		nameRow.Layout.Add( _nameEdit, 1 );
-		rightPanel.Layout.Add( nameRow );
+		right.Layout.Add( nameRow );
 
-		var clothingLabel = new Label( "Kıyafetler (seç):", rightPanel );
-		clothingLabel.SetStyles( "margin-top: 8px; margin-bottom: 2px;" );
-		rightPanel.Layout.Add( clothingLabel );
+		right.Layout.Add( new Label( "Kıyafetler (seç):", right ) );
 
-		_clothingList = new ListView( rightPanel );
-		_clothingList.SelectionMode = SelectionMode.Multiple;
-		rightPanel.Layout.Add( _clothingList, 1 );
+		_clothingListView = new ListView( right );
+		right.Layout.Add( _clothingListView, 1 );
 
-		_saveButton = new Button( "Şablon Olarak Kaydet", rightPanel );
-		_saveButton.Clicked += OnSaveClicked;
-		rightPanel.Layout.Add( _saveButton );
+		var saveBtn = new Button( "Şablon Olarak Kaydet", right );
+		saveBtn.Clicked += OnSaveClicked;
+		right.Layout.Add( saveBtn );
 
-		root.Layout.Add( rightPanel, 1 );
-
-		Layout = Layout.Column();
-		Layout.Add( root, 1 );
+		Layout.Add( right, 1 );
 	}
 
 	void Refresh()
@@ -121,8 +100,8 @@ public class OutfitPresetTool : DockWidget
 		_presets = OutfitPresetLibrary.LoadAll();
 		_availableClothing = OutfitPresetLibrary.FindClothingAssets();
 
-		_presetList.SetItems( _presets.Select( p => p.Name ).ToList() );
-		_clothingList.SetItems( _availableClothing );
+		_presetListView.SetItems( _presets.Select( p => (object)p.Name ).ToList() );
+		_clothingListView.SetItems( _availableClothing.Select( p => (object)p ).ToList() );
 	}
 
 	void OnPresetSelected( object item )
@@ -137,7 +116,6 @@ public class OutfitPresetTool : DockWidget
 	{
 		if ( _selectedPreset == null ) return;
 
-		// Sahnede seçili Dresser'ı bul ve uygula
 		var dresser = EditorScene.Selection
 			.OfType<GameObject>()
 			.SelectMany( go => go.Components.GetAll<Dresser>() )
@@ -145,7 +123,7 @@ public class OutfitPresetTool : DockWidget
 
 		if ( dresser == null )
 		{
-			EditorUtility.DisplayDialog( "Hata", "Önce sahnede bir Dresser component'i seçin.", "Tamam" );
+			EditorUtility.DisplayDialog( "Hata", "Önce sahnede bir Dresser component'i olan objeyi seçin.", "Tamam" );
 			return;
 		}
 
@@ -157,6 +135,8 @@ public class OutfitPresetTool : DockWidget
 		if ( _selectedPreset == null ) return;
 		OutfitPresetLibrary.Delete( _selectedPreset );
 		_selectedPreset = null;
+		_applyButton.Enabled = false;
+		_deleteButton.Enabled = false;
 		Refresh();
 	}
 
@@ -168,22 +148,19 @@ public class OutfitPresetTool : DockWidget
 			return;
 		}
 
-		var selectedIndices = _clothingList.SelectedItems.Cast<int>().ToList();
-		var clothing = selectedIndices.Select( i => _availableClothing[i] ).ToList();
-
-		if ( clothing.Count == 0 )
+		var selected = _clothingListView.SelectedItems.Cast<string>().ToList();
+		if ( selected.Count == 0 )
 		{
 			EditorUtility.DisplayDialog( "Hata", "En az bir kıyafet seçin.", "Tamam" );
 			return;
 		}
 
-		var preset = new OutfitPreset
+		OutfitPresetLibrary.Save( new OutfitPreset
 		{
 			Name = _newPresetName,
-			ClothingPaths = clothing
-		};
+			ClothingPaths = selected
+		} );
 
-		OutfitPresetLibrary.Save( preset );
 		_nameEdit.Text = "";
 		_newPresetName = "";
 		Refresh();
@@ -192,11 +169,35 @@ public class OutfitPresetTool : DockWidget
 	public static void ApplyPresetToDresser( Dresser dresser, OutfitPreset preset )
 	{
 		dresser.Clothing.Clear();
+
 		foreach ( var path in preset.ClothingPaths )
 		{
 			var asset = ResourceLibrary.Get<Clothing>( path );
-			if ( asset != null )
-				dresser.Clothing.Add( asset );
+			if ( asset == null ) continue;
+			dresser.Clothing.Add( new ClothingContainer.ClothingEntry { Clothing = asset } );
+		}
+
+		_ = dresser.Apply();
+	}
+}
+
+/// <summary>
+/// Üst menüde "Editor > Outfit Presets" girişini açar.
+/// </summary>
+public static class OutfitPresetMenu
+{
+	[Menu( "Editor", "Outfit Presets/Open" )]
+	public static void Open()
+	{
+		var existing = OutfitPresetTool.Instance;
+		if ( existing != null && existing.IsValid )
+		{
+			existing.Show();
+			EditorWindow.DockManager.RaiseDock( existing );
+		}
+		else
+		{
+			EditorWindow.DockManager.Create<OutfitPresetTool>();
 		}
 	}
 }
