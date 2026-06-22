@@ -314,7 +314,8 @@ public static class OutfitPresetMenu
 		var fullPath = System.IO.Path.Combine( Project.Current?.GetRootPath() ?? "", PreviewScenePath );
 		if ( System.IO.File.Exists( fullPath ) )
 		{
-			SceneEditorSession.Open( fullPath );
+			var session = SceneEditorSession.CreateFromPath( fullPath );
+			session?.MakeActive( true );
 		}
 
 		// Sonra paneli aç/öne getir
