@@ -305,20 +305,9 @@ public class OutfitPresetTool : Widget
 
 public static class OutfitPresetMenu
 {
-	const string PreviewScenePath = "Libraries/sbox-easier-dresser/Assets/scenes/dresser_preview.scene";
-
 	[Menu( "Editor", "Outfit Presets/Open" )]
 	public static void Open()
 	{
-		// Önce preview sahnesini aç
-		var fullPath = System.IO.Path.Combine( Project.Current?.GetRootPath() ?? "", PreviewScenePath );
-		if ( System.IO.File.Exists( fullPath ) )
-		{
-			var session = SceneEditorSession.CreateFromPath( fullPath );
-			session?.MakeActive( true );
-		}
-
-		// Sonra paneli aç/öne getir
 		var existing = OutfitPresetTool.Instance;
 		if ( existing != null && existing.IsValid )
 		{
