@@ -1,7 +1,7 @@
 {
   "Title": "SBox Easier Dresser",
   "Type": "library",
-  "Org": "tufancan",
+  "Org": "hollmmes",
   "Ident": "sbox-easier-dresser",
   "Schema": 1,
   "IncludeSourceFiles": false,
